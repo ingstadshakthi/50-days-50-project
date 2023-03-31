@@ -5,7 +5,17 @@ sounds.forEach(sound => {
   btn.classList.add('btn');
   btn.innerHTML = sound;
   btn.addEventListener("click", () => {
+    stopSongs();
     document.getElementById(sound).play();
   });
   document.getElementById('buttons').appendChild(btn);
 });
+
+
+function stopSongs() {
+  sounds.forEach(s => {
+    const song = document.getElementById(s)
+    song.pause();
+    song.currentTime = 0;
+  });
+}
