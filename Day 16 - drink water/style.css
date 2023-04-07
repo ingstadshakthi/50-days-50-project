@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(47, 103, 209);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.target {
+  margin-bottom: 20px;
+}
+
+.big-glass,
+.glass {
+  width: 36px;
+  height: 60px;
+  background-color: #efefef;
+  border: 3px solid darkblue;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  font-size: 12px;
+  color: rgb(0, 0, 0, 0.9);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: dodgerblue;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.big-glass {
+  width: 180px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: dodgerblue;
+}
+
+.desc {
+  margin: 10px 0;
+}
+
+.glass-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.glass.highlight {
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.remaining {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #fff;
+  width: 100%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  transition: height 0.3s ease;
+}
+
+.drank {
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s ease;
+}
