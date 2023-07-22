@@ -11,7 +11,7 @@ function checkBoxes() {
   boxes.forEach((box) => {
     const boxTop = box.getBoundingClientRect().top;
     if (boxTop < bottomDimension) {
-      box.classList.add('show')
+      box.classList.add('show');
     } else {
       box.classList.remove('show');
     }
